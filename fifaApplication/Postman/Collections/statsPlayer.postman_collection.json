@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "4a2f15cb-8c84-4a24-9e64-9b125758f623",
+		"name": "statsPlayer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21291069"
+	},
+	"item": [
+		{
+			"name": "GetAllDetails",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetPlayerById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/fifa/api/v1/statistics/get-by-id/{{id}}",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fifa",
+						"api",
+						"v1",
+						"statistics",
+						"get-by-id",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPlayerByGamesPlayed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/fifa/api/v1/statistics/get-by-games-played/?games={{games}}",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fifa",
+						"api",
+						"v1",
+						"statistics",
+						"get-by-games-played",
+						""
+					],
+					"query": [
+						{
+							"key": "games",
+							"value": "{{games}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPlayerByMinutes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/fifa/api/v1/statistics/get-by-minutes/{{minutes}}",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fifa",
+						"api",
+						"v1",
+						"statistics",
+						"get-by-minutes",
+						"{{minutes}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPlayerByGoalScore",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/fifa/api/v1/statistics/get-by-goal-score/{{goals}}",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fifa",
+						"api",
+						"v1",
+						"statistics",
+						"get-by-goal-score",
+						"{{goals}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPlayerByBirthRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/fifa/api/v1/statistics/get-by-birth-year/{{birthYear}}",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fifa",
+						"api",
+						"v1",
+						"statistics",
+						"get-by-birth-year",
+						"{{birthYear}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

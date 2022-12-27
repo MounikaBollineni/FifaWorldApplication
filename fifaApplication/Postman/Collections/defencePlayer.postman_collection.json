@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "e8e1d103-46fa-49fc-b339-8d2739cd2d2e",
+		"name": "defencePlayer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21291069"
+	},
+	"item": [
+		{
+			"name": "GetAllPlayers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/fifa/api/v1/defence/get-all-details",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fifa",
+						"api",
+						"v1",
+						"defence",
+						"get-all-details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPlayerById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/fifa/api/v1/defence/get-by-id/10",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fifa",
+						"api",
+						"v1",
+						"defence",
+						"get-by-id",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPlayersByPosition",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/fifa/api/v1/defence/get-by-position/?position={{position}}",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"fifa",
+						"api",
+						"v1",
+						"defence",
+						"get-by-position",
+						""
+					],
+					"query": [
+						{
+							"key": "position",
+							"value": "{{position}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPlayerByTeam",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetPlayerBytackles",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetPlayerByTacklesWon",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

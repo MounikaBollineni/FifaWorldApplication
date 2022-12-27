@@ -1,0 +1,27 @@
+DROP TABLE IF EXISTS player_defence;
+CREATE TABLE player_defence (
+  id int NOT NULL ,
+  player varchar(50) DEFAULT NULL,
+  position varchar(50) DEFAULT NULL,
+  team varchar(50) DEFAULT NULL,
+  age varchar(50) DEFAULT NULL,
+  birth_year int DEFAULT NULL,
+  minutes_90s DOUBLE PRECISION DEFAULT NULL,
+  tackles int DEFAULT NULL,
+  tackles_won int DEFAULT NULL,
+  tackles_def_3rd int DEFAULT NULL,
+  tackles_mid_3rd int DEFAULT NULL,
+  tackles_att_3rd int DEFAULT NULL,
+  dribble_tackles int DEFAULT NULL,
+  dribbles_vs int DEFAULT NULL,
+  dribble_tackles_pct DOUBLE PRECISION DEFAULT NULL,
+  dribbled_past int DEFAULT NULL,
+  blocks int DEFAULT NULL,
+  blocked_shots int DEFAULT NULL,
+  blocked_passes int DEFAULT NULL,
+  interceptions int DEFAULT NULL,
+  tackles_interceptions int DEFAULT NULL,
+  clearances int DEFAULT NULL,
+  errors int DEFAULT NULL,
+  PRIMARY KEY (id)
+);
